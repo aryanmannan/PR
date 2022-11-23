@@ -1,6 +1,6 @@
 # PR
 
-####1 a. Implement a Decision Tree
+#### 1 a. Implement a Decision Tree
 
 In [1] from sklearn import tree
 In [2] clf = tree. DecisionTreeClassifier()
@@ -17,13 +17,13 @@ In [7]: print (prediction)
 ['Woman']
 In [8] from matplotlib import pyplot as plt
 
-####1b. Visualise decision tree
+#### 1b. Visualise decision tree
 
 In [8]: from matplotlib import pyplot as plt
 In [9] fig= plt.figure(figsize=(4,4), facecolor="white")
 tree.plot_tree(dtclf, feature_names["Height", "Hair length", "Voice pitch"], class_names=["Man", "Woman"], filled=True)
 
-####2. Implement SVM
+#### 2. Implement SVM
 
 In [1] from sklearn.svm import SVC import matplotlib.pyplot as plt
 In [2]: clf = SVC()
@@ -38,7 +38,7 @@ In [5] svcClassifier = clf.fit(X,Y)
 In [6] prediction = svcClassifier.predict([[133,37,1]])
 In [7] print (prediction)
 
-#####MNIST Dataset
+##### MNIST Dataset
 
 In [8]: from sklearn.datasets import load_digits
 from sklearn.model_selection import train_test_split
@@ -65,7 +65,7 @@ cf_matrix=confusion_matrix(y_test, svcClassifier.predict(x_test))
 sns.heatmap(cf_matrix, annot=True)
 plt.show()
 
-####3. Implement Agglomerative Hierarchical Clustering.
+#### 3. Implement Agglomerative Hierarchical Clustering.
 In [1]: import numpy as np
 import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import dendrogram, linkage
@@ -139,7 +139,7 @@ plt.xlabel('parameter')
 plt.plot(rates, estimates)
 print('parameter value:’, rates [estimates.index (max (estimates))])
 
-####6. Implement Principal Component Analysis and use it for unsupervised learning.
+#### 6. Implement Principal Component Analysis and use it for unsupervised learning.
  
 In [1] import pandas as pd
 import numpy as np
@@ -171,9 +171,7 @@ plt.show()
 In[6]: pca.components
 
 
-
-
-#END
+# END
 
 
 
