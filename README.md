@@ -2,19 +2,19 @@
 
 #### 1 a. Implement a Decision Tree
 
-In [1] from sklearn import tree
-In [2] clf = tree. DecisionTreeClassifier()
-In [3] # height, hair length, voice pitch 
-X = [[180, 15, 0],
-[167, 42, 1],
-[136, 35, 1],
-[174, 15, 0],
-[141, 28, 1]]
-In [4] Y = [ 'Man', 'Woman', 'Woman', 'Man', 'Woman']
-In [5]: dtclf = clf.fit(X,Y)
-In [6]: prediction =dtclf.predict([[133,37,1]])
-In [7]: print (prediction)
-['Woman']
+In [1] from sklearn import tree  
+In [2] clf = tree. DecisionTreeClassifier()  
+In [3] # height, hair length, voice pitch   
+X = [[180, 15, 0],  
+[167, 42, 1],  
+[136, 35, 1],  
+[174, 15, 0],  
+[141, 28, 1]]  
+In [4] Y = [ 'Man', 'Woman', 'Woman', 'Man', 'Woman']  
+In [5]: dtclf = clf.fit(X,Y)  
+In [6]: prediction =dtclf.predict([[133,37,1]])  
+In [7]: print (prediction)  
+['Woman']  
 In [8] from matplotlib import pyplot as plt
 
 #### 1b. Visualise decision tree
